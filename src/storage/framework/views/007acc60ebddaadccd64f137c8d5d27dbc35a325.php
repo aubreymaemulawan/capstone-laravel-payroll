@@ -6,6 +6,10 @@
     ul.navbar-nav.navbar-nav-right li:last-child{
         display: block !important;
     }
+
+    #Employees-0 .btn-secondary, #Attendance-1 .btn-secondary{
+        display: none !important;
+    }
 </style>
 
 <?php $__env->startSection('master'); ?>
@@ -34,13 +38,6 @@
                 <?php echo $__env->yieldContent('contents'); ?>
             </div>
         </div>
-            <?php if(env('IS_DEMO', false)): ?>
-                <div class="" style="z-index:201; bottom:0; right:0; position:fixed; margin:50px;">
-                    <a href="https://codecanyon.net/item/payday-hrm-solutions/33681719" class="btn btn-warning rounded-pill shadow-lg">
-                        <span class="mr-2"><app-icon name="shopping-cart"/></span>Buy now!
-                    </a>
-                </div>
-            <?php endif; ?>
     </div>
 <?php $__env->stopSection(); ?>
 

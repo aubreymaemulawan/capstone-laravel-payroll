@@ -8,11 +8,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', url('admin/users/login'));
 
-Route::view('/welcome', 'welcome'); // temporary
-Route::get("doc/core/components", [\App\Http\Controllers\DocumentationController::class,'index']);
-Route::get("doc/core/components/{component_name}", [\App\Http\Controllers\DocumentationController::class,'show']);
-
-
 // Switch between the included languages
 Route::get('lang/{lang}', [LanguageController::class, 'swap'])->name('language.change');
 
@@ -64,15 +59,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin', 'as' => 'core.'], fu
     include_route_files(__DIR__ . '/core/');
 
 });
-
-
-
-/*
- * This routes is for documentation purpose.
- */
-
-Route::get("doc/core/components", [DocumentationController::class,'index']);
-Route::get("doc/core/components/{component_name}", [DocumentationController::class,'show']);
 
 Route::any('install-demo-data', [InstallDemoDataController::class, 'run'])
     ->name('install-demo-data');

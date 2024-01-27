@@ -239,6 +239,7 @@ export default {
             this.loading = false;
         },
         afterSuccess(response) {
+            console.log(JSON.stringify(response));
             this.loading = false;
             if (response.data.stat?.errors > 0) {
                 if (response.data.stat.successfull > 0) {
