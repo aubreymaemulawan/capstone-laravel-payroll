@@ -33,7 +33,7 @@ if (!function_exists('import_failed')) {
 
         $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
 
-        $spreadsheet = $reader->load($file->getRealPath());
+        $spreadsheet = $reader->load($file);
         // Retrieve the current active worksheet
         $sheet = $spreadsheet->getActiveSheet();
 
