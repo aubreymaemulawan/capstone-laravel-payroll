@@ -104,7 +104,7 @@ class AttendanceImport implements ToModel, WithHeadingRow, WithValidation, WithB
     public function rules(): array
     {
         return [
-            'employee_id' => ['required', 'string', 'exists:profiles,employee_id'],
+            'employee_id' => ['required', 'exists:profiles,employee_id'],
             'in_time' => ['required', 'date_format:Y-m-d H:i:s'],
             'out_time' => ['required', 'date_format:Y-m-d H:i:s'],
         ];

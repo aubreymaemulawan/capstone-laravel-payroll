@@ -1448,7 +1448,7 @@ return array_merge([
     'csv_format_guide' => 'Format your CSV the same way as the sample file.',
     'csv_column_separation_guide' => 'Your CSV columns should be separated by commas, not semicolons or any other characters.',
     'csv_column_guide' => 'The names and the number of the column in your CSV should be the same as the sample.',
-    'csv_huge_data_guide' => 'Recommended CSV file should not contain more than 500 rows with default server configuration.',
+    'csv_huge_data_guide' => 'Recommended CSV file should not contain more than 1800 rows with default server configuration.',
     'csv_error_handle_guide' => 'For resolving the error download the error file and correct the incorrect cells and import that file again through .csv format.',
     'csv_after_import_message' => 'All imported employees will receive an email to reset their password in order to log in except the terminated employee.',
     'csv_column_data_format' => 'The columns : department, designation, employment_status and roles value must be the same value that exists on the application. For the gender column three option available [male, female, other], for multiple roles use only comma(,) to separate roles and the joining_date column must be the date format of YYYY-MM-DD',
@@ -1464,7 +1464,7 @@ return array_merge([
     'after_employee_import_message' => 'All imported employees will receive an email to reset their password in order to log in except the terminated employee.',
     'errors_found' => 'Errors found',
     'maximum_execution_time_exceeded' => 'Maximum execution time exceeded!',
-    'maximum_row_exceeded_message' => 'CSV file can not contain more than 500 rows(employee) at a time!',
+    'maximum_row_exceeded_message' => 'CSV file can not contain more than 1800 rows(employee) at a time!',
 
     'import_attendance' => 'Import attendance',
     'download_sample_file' => 'Download sample file',

@@ -49,7 +49,7 @@ class AttendanceImportController extends Controller
 
         //row number
         $rows = count(array_map('str_getcsv', file($newCsvFile)));
-        throw_if($rows > 501,
+        throw_if($rows > 1801,
             ValidationException::withMessages([
                 'import_file' => [__t('maximum_row_exceeded_message')]
             ]));
